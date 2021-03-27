@@ -1,8 +1,5 @@
 package linked;
 
-import android.support.annotation.NonNull;
-
-import org.w3c.dom.Node;
 
 /**
  * 链表  真正实现动态的数据结构,不需要处理固定容量的问题
@@ -44,7 +41,7 @@ public class LinkedList<E> {
         System.out.println(list);
     }
 
-    @NonNull
+
     @Override
     public String toString() {
 
