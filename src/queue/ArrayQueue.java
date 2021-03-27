@@ -1,6 +1,7 @@
 package queue;
 
-import com.example.datastructure.array.Array;
+
+import array.Array;
 
 /**
  * 先进先出
@@ -9,7 +10,7 @@ import com.example.datastructure.array.Array;
  */
 public class ArrayQueue<E> implements Queue<E> {
 
-    Array<E>  array = new Array<>();
+    Array<E> array = new Array<>();
 
 
 

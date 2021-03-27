@@ -1,6 +1,5 @@
 package queue;
 
-import com.example.datastructure.array.Array;
 
 /*
 循环队列

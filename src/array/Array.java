@@ -1,7 +1,6 @@
 package array;
 
 
-import java.util.Objects;
 
 /**
  * 实现增删改查
@@ -15,7 +14,7 @@ public class Array<E> {
     }
 
     public Array(int capactity) {
-        arr = (E[])new Objects[capactity];
+        arr = (E[])new Object[capactity];
         size = 0;
     }
 
@@ -100,7 +99,7 @@ public class Array<E> {
         for (int x = size - 1; x >= index; x--)
             arr[x + 1] = arr[x];
 
-        arr[index] = e;
+        arr[index] = (E)e;
 
         size++;
 
@@ -111,8 +110,7 @@ public class Array<E> {
     public String toString() {
         StringBuffer stringBuffer = new StringBuffer();
 
-        for (E e :
-                arr) {
+        for (E e :  arr) {
             stringBuffer.append(e + "\n");
         }
 
@@ -125,7 +123,7 @@ public class Array<E> {
      */
     public void resize(int newCaptity){
 
-        E [] newData = (E[]) new Objects[newCaptity];
+        E [] newData = (E[]) new Object[newCaptity];
 
         for (int i = 0; i < size; i++) {
             newData[i] = arr[i];
